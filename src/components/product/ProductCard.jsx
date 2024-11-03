@@ -14,6 +14,7 @@ const ProductCard = ({ product }) => {
                 <p className="text-indigo-400">
                     ${product.price}
                 </p>
+                {/* Map through the rating icons */}
                 <div className="flex items-center">
                     <span className="text-yellow-500 flex items-center gap-0.5">
                         {[...Array(Math.round(product.rating))].map((_, index) => (
