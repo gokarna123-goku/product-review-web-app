@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import ProductCard from "./components/ProductCard";
-import ProductFilter from "./components/ProductFilter";
-import { productData } from "./constants/data";
+import ProductCard from "../components/ProductCard";
+import ProductFilter from "../components/ProductFilter";
+import { productData } from "../constants/data";
+
 
 const Product = () => {
 
@@ -20,8 +21,8 @@ const Product = () => {
 
 
     return (
-        <div className='w-full'>
-            <div className="p-8 space-y-5">
+        <div className='w-full px-16 py-8'>
+            <div className="space-y-10">
                 <ProductFilter
                     searchTerm={searchTerm}
                     onSearchChange={handleSearchChange}

@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { productData } from "../constants/data";
 import Navbar from "./Navbar";
+import { FaStar } from "react-icons/fa6";
 
 
 const ProductPage = () => {
@@ -11,24 +12,105 @@ const ProductPage = () => {
     if (!product) return <div>Product not found!</div>;
 
     return (
-        <div className="w-full min-h-screen bg-neutral-50 flex flex-col text-neutral-600 space-y-5">
-            <Navbar />
+        <div className="w-full min-h-screen bg-neutral-50 flex flex-col text-neutral-600 space-y-10 px-16 py-8">
+            {/* Product Details */}
+            <div className="w-full grid grid-cols-5 gap-16 items-center">
 
-            <div className="w-full space-y-8 px-16 py-8">
-                <div className="max-w-full mx-auto">
-                    <h2 className="text-3xl font-semibold text-indigo-500">{product.name}</h2>
-                    <div className="flex justify-between mt-4">
-                        <p className="text-lg">${product.price}</p>
-                        <span className="text-yellow-400">{'⭐'.repeat(Math.round(product.rating))}</span>
-                        <span className="text-sm text-neutral-400">{product.rating} / 5</span>
-                    </div>
-                    <img src={product.image} alt={product.name} className="w-full h-96 object-cover mt-4 rounded-lg" />
-                    <div className="mt-6 text-neutral-200">
-                        <h3 className="text-xl font-semibold">Description:</h3>
-                        <p>{product.description}</p>
-                    </div>
+                <div className="col-span-3">
+                    <img src={product.image} alt={product.name} className="w-full aspect-video object-cover mt-4 rounded-lg" />
                 </div>
 
+                <div className="col-span-2 space-y-5">
+                    <div className="space-y-3">
+                        <h2 className="text-4xl font-bold text-teal-600">{product.name}</h2>
+                        <div className="flex gap-3">
+                            <p className="text-yellow-500 flex items-center gap-0.5">
+                                {[...Array(Math.round(product.rating))].map((_, index) => (
+                                    <FaStar key={index} />
+                                ))}
+                            </p>
+                            <p className="text-sm text-neutral-500 mt-1">({product.rating} / 5)</p>
+                        </div>
+                    </div>
+                    <p className="text-lg font-bold text-neutral-800">${product.price}</p>
+                    <p>{product.description}</p>
+                </div>
+            </div>
+
+            {/* Product Reviews */}
+            <div className="w-full space-y-7">
+                <h2 className="text-3xl font-bold text-neutral-600">Recent Reviews</h2>
+                <div className="w-full grid grid-cols-3 gap-10">
+                    <div className="bg-neutral-50 p-5 rounded-xl border border-neutral-200 space-y-2">
+                        <h3 className="text-xl font-semibold">Title</h3>
+                        {/* rating and value */}
+                        <div className="flex items-center">
+                            <span className="text-yellow-500 flex items-center gap-0.5">
+                                {[...Array(Math.round(product.rating))].map((_, index) => (
+                                    <FaStar key={index} />
+                                ))}
+                            </span>
+                            <span className="ml-2 text-sm">{product.rating} / 5</span>
+                        </div>
+
+                        {/* review */}
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, similique deserunt nemo vero iusto repellendus!
+                        </p>
+
+                        {/* user info, date */}
+                        <div className="flex items-center justify-between">
+                            <p className="font-normal text-sm text-neutral-500">John Doe</p>
+                            <p className="font-normal text-sm text-neutral-500">2023-01-01</p>
+                        </div>
+                    </div>
+                    <div className="bg-neutral-50 p-5 rounded-xl border border-neutral-200 space-y-2">
+                        <h3 className="text-xl font-semibold">Title</h3>
+                        {/* rating and value */}
+                        <div className="flex items-center">
+                            <span className="text-yellow-500 flex items-center gap-0.5">
+                                {[...Array(Math.round(product.rating))].map((_, index) => (
+                                    <FaStar key={index} />
+                                ))}
+                            </span>
+                            <span className="ml-2 text-sm">{product.rating} / 5</span>
+                        </div>
+
+                        {/* review */}
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, similique deserunt nemo vero iusto repellendus!
+                        </p>
+
+                        {/* user info, date */}
+                        <div className="flex items-center justify-between">
+                            <p className="font-normal text-sm text-neutral-500">John Doe</p>
+                            <p className="font-normal text-sm text-neutral-500">2023-01-01</p>
+                        </div>
+                    </div>
+                    <div className="bg-neutral-50 p-5 rounded-xl border border-neutral-200 space-y-2">
+                        <h3 className="text-xl font-semibold">Title</h3>
+                        {/* rating and value */}
+                        <div className="flex items-center">
+                            <span className="text-yellow-500 flex items-center gap-0.5">
+                                {[...Array(Math.round(product.rating))].map((_, index) => (
+                                    <FaStar key={index} />
+                                ))}
+                            </span>
+                            <span className="ml-2 text-sm">{product.rating} / 5</span>
+                        </div>
+
+                        {/* review */}
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, similique deserunt nemo vero iusto repellendus!
+                        </p>
+
+                        {/* user info, date */}
+                        <div className="flex items-center justify-between">
+                            <p className="font-normal text-sm text-neutral-500">John Doe</p>
+                            <p className="font-normal text-sm text-neutral-500">2023-01-01</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 

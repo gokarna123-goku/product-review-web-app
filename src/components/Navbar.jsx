@@ -11,9 +11,9 @@ const Navbar = () => {
                 </Link>
 
                 {/* Navbar Items & Btn */}
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-10">
                     {/* Navbar items links */}
-                    <ul className="list-none flex items-center gap-4 text-base text-neutral-600 font-medium">
+                    <ul className="list-none flex items-center gap-6 text-base text-neutral-600 font-medium">
                         <li>
                             <Link to="/" className='text-teal-600 ease-in-out duration-300'>Home</Link>
                         </li>
@@ -26,6 +26,9 @@ const Navbar = () => {
                     </ul>
 
                     {/* Button */}
+                    <Link to="/login" className="bg-teal-600 block text-neutral-50 py-2 px-4 rounded-md hover:bg-teal-700 ease-in-out duration-300">
+                        Write a Review
+                    </Link>
                 </div>
             </div>
         </header>

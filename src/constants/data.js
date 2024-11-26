@@ -5,7 +5,7 @@ export const productData = [
         category: "Electronics",
         price: 79.99,
         rating: 4.5,
-        image: "https://cdn.pixabay.com/photo/2021/07/14/17/23/photography-6466671_1280.jpg",
+        image: "https://cdn.pixabay.com/photo/2024/02/26/14/13/energy-8598060_1280.jpg",
         description: "High-quality wireless headphones with noise-canceling features."
     },
     {
@@ -14,7 +14,7 @@ export const productData = [
         category: "Beauty",
         price: 29.99,
         rating: 4.7,
-        image: "https://cdn.pixabay.com/photo/2019/09/03/10/53/watch-4449152_1280.jpg",
+        image: "https://cdn.pixabay.com/photo/2020/08/26/15/44/perfume-5519826_1280.jpg",
         description: "A revitalizing beauty serum with natural ingredients."
     },
     {
@@ -23,16 +23,16 @@ export const productData = [
         category: "Electronics",
         price: 199.99,
         rating: 4.2,
-        image: "https://cdn.pixabay.com/photo/2016/04/12/14/52/inline-skate-1324496_1280.jpg",
+        image: "https://cdn.pixabay.com/photo/2023/10/07/14/24/smartwatch-8300238_1280.jpg",
         description: "Smartwatch with fitness tracking and heart-rate monitor."
     },
     {
         id: 4,
-        name: "Summer Dress",
+        name: "Winter Dress",
         category: "Fashion",
         price: 49.99,
         rating: 4.3,
-        image: "https://cdn.pixabay.com/photo/2017/08/20/10/39/product-photography-2661250_1280.jpg",
-        description: "Stylish and comfortable summer dress for casual wear."
+        image: "https://cdn.pixabay.com/photo/2023/11/25/05/42/ai-generated-8411086_960_720.jpg",
+        description: "Stylish and comfortable Winter dress for casual wear."
     },
 ];
