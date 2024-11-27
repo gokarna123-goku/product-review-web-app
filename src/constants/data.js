@@ -4,7 +4,7 @@ export const productData = [
         name: "Wireless Headphones",
         category: "Electronics",
         price: 79.99,
-        rating: 4.5,
+        rating: 3.5,
         image: "https://cdn.pixabay.com/photo/2024/02/26/14/13/energy-8598060_1280.jpg",
         description: "High-quality wireless headphones with noise-canceling features."
     },
@@ -22,7 +22,7 @@ export const productData = [
         name: "Smartwatch",
         category: "Electronics",
         price: 199.99,
-        rating: 4.2,
+        rating: 5,
         image: "https://cdn.pixabay.com/photo/2023/10/07/14/24/smartwatch-8300238_1280.jpg",
         description: "Smartwatch with fitness tracking and heart-rate monitor."
     },
