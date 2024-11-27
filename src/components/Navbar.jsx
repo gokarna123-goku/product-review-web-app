@@ -26,7 +26,7 @@ const Navbar = () => {
                     </ul>
 
                     {/* Button */}
-                    <Link to="/login" className="bg-teal-600 block text-neutral-50 py-2 px-4 rounded-md hover:bg-teal-700 ease-in-out duration-300">
+                    <Link to="/" className="bg-teal-600 block text-neutral-50 py-2 px-4 rounded-md hover:bg-teal-700 ease-in-out duration-300">
                         Write a Review
                     </Link>
                 </div>

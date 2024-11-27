@@ -54,7 +54,7 @@ const ProductPage = () => {
                         </div>
 
                         {/* review */}
-                        <p>
+                        <p className="text-sm text-neutral-500 font-normal">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, similique deserunt nemo vero iusto repellendus!
                         </p>
 
@@ -64,6 +64,7 @@ const ProductPage = () => {
                             <p className="font-normal text-sm text-neutral-500">2023-01-01</p>
                         </div>
                     </div>
+
                     <div className="bg-neutral-50 p-5 rounded-xl border border-neutral-200 space-y-2">
                         <h3 className="text-xl font-semibold">Title</h3>
                         {/* rating and value */}
@@ -77,7 +78,7 @@ const ProductPage = () => {
                         </div>
 
                         {/* review */}
-                        <p>
+                        <p className="text-sm text-neutral-500 font-normal">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, similique deserunt nemo vero iusto repellendus!
                         </p>
 
@@ -87,6 +88,7 @@ const ProductPage = () => {
                             <p className="font-normal text-sm text-neutral-500">2023-01-01</p>
                         </div>
                     </div>
+
                     <div className="bg-neutral-50 p-5 rounded-xl border border-neutral-200 space-y-2">
                         <h3 className="text-xl font-semibold">Title</h3>
                         {/* rating and value */}
@@ -100,7 +102,7 @@ const ProductPage = () => {
                         </div>
 
                         {/* review */}
-                        <p>
+                        <p className="text-sm text-neutral-500 font-normal">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, similique deserunt nemo vero iusto repellendus!
                         </p>
 
